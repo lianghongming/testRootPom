@@ -11,7 +11,7 @@
     <packaging>pom</packaging>
 
     <scm>
-        <developerConnection>scm:git:https://github.com/miracle2138/testRootPom.git</developerConnection>
+        <developerConnection>scm:git:https://github.com/lianghongming/testRootPom.git</developerConnection>
     </scm>
 
     <properties>
@@ -51,14 +51,14 @@
 
     <distributionManagement>
         <repository>
-            <id>release_user</id>
-            <name>Release Deploy</name>
-            <url>http://localhost:8081/repository/maven-releases/</url>
+            <id>nexus-releases</id>
+            <name>nexus-releases</name>
+            <url>http://cs03:8081/repository/maven-releases/</url>
         </repository>
         <snapshotRepository>
-            <id>snapshot_user</id>
-            <name>Snapshot Deploy</name>
-            <url>http://localhost:8081/repository/maven-snapshots/</url>
+            <id>nexus-snapshot</id>
+            <name>nexus-snapshot</name>
+            <url>http://cs03:8081/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 </project>
